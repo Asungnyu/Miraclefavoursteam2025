@@ -1,0 +1,133 @@
+/* About page specific styles */
+.about-hero{
+    background-image: url('https://via.placeholder.com/1500x300/87CEEB/FFFFFF?text=Abouut+Sherang+Ngwa'); /* Replace with a suitable about page banner image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    height: 300px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-overlay {
+    background-color: rgb(41, 101, 41);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-hero-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+.about-hero-content-p {
+    font-size: 1.2em;
+}
+.about-content {
+    padding: 60px 0;
+    background-color: #f8f9fa; /*lighter grey foer content */
+}
+about-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px;
+    align-items: flex-start; /* Align items to top */
+    margin-bottom: 60px;
+}
+.about-image {
+    flex: 0 0 300px; /* Fixed width for image, no shrinking or growing */
+    height: 400px; /*Fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.about-text {
+    flex: 1; /* Takes up remaining space */
+    min-width: 300px; /* Ensures text doesn't get too narrow */
+}
+.about-text h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.about-text p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
+}
+.about-values {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+.about-values h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.about-values ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.about-values ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1.1em;
+    color: #444;
+}
+.about-values ul li .fas {
+    color: #27ae60; /* Green checkmark */
+    font-size: 1.3em;
+    margin-top: 3px;
+}
+/* Adjustments for header navigation on larger screens to make room for new links */
+header nav a {
+    color: #fff;
+    margin-right: 20px; /* Spacing between nav items */
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+header nav a:hover {
+    color: #f39c12; /* Orange on hover */
+}
+/* Responsive adjustments for about page */
+@media  (max-width: 768px) {
+.about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about-image {
+    margin-bottom: 30px;
+    border-radius: 2%;
+}
+.about-values ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+    .about-hero-content h2 {
+        font-size: 2em;
+     }
+    .about-hero-content-p {
+        font-size: 1em;
+    }
+}
+.h2 somp {
+    text-decoration: underline;
+}
+.atag a {
+    text-decoration: none;
+}

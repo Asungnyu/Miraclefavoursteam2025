@@ -1,0 +1,107 @@
+/* Unpublished books page specific styles */
+.books-hero {
+    background-image: url(AKA.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.book-overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.books-hero-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+.books-hero-content p {
+    font-size: 1.2em;
+}
+.books-content {
+    padding: 60px 0;
+     background-color: #f8fafa;
+     text-align: center;
+}
+.books-content h3 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.books-content > p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: #555;
+}
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+.book-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.book-details h4 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.book-genre {
+    color: #3498db;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.book-description {
+    line-height: 1.6;
+    color: #555;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+.btn-small {
+    display: inline-block;
+    background-color: #f39c12; /* Orange  */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-small:hover {
+    background-color: #e67e22;
+}
+/*nResponsive adjustment for books page */
+@media (max-width: 768px) {
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
