@@ -1,17 +1,17 @@
 /* Unpublished books page specific styles */
 .books-hero {
-    background-image: url(AKA.jpg);
+    background-image: url('./images/AKA.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     position: relative;
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.book-overlay{
+.books-overlay{
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     top: 0;
@@ -30,7 +30,7 @@
     font-size: 1.2em;
 }
 .books-content {
-    padding: 60px 0;
+    padding: 25px 0;
      background-color: #f8fafa;
      text-align: center;
 }
@@ -39,7 +39,7 @@
     font-size: 2em;
     margin-bottom: 10px;
 }
-.books-content > p {
+.books-content p {
     max-width: 800px;
     margin: 0 auto 40px;
     line-height: 1.6;
@@ -99,7 +99,7 @@
 .btn-small:hover {
     background-color: #e67e22;
 }
-/*nResponsive adjustment for books page */
+/*Responsive adjustment for books page */
 @media (max-width: 768px) {
     .book-grid {
         grid-template-columns: 1fr;

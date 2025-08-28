@@ -20,6 +20,15 @@ a{
   justify-content: space-between;
   padding: 20px;
   text-decoration: none;
+  list-style: none;
+
+}
+#atag li{
+    margin-right: 16px;
+}
+#atag li a:hover{
+    font-size: 17px;
+    transition: 0.3s ease-out;
 }
 /* Header */
 header {
@@ -53,7 +62,7 @@ header nav .fas {
 }
 /* Hero Section */
 .hero-section {
-    background-image: url('mainic.jpg'); /*Replace with your actual image*/
+    background-image: url('./images/mainic.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -64,7 +73,7 @@ header nav .fas {
     align-items: center;
     justify-content: center;
 }
-hero-overlay {
+.hero-overlay {
     background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
     position: absolute;
     top: 0;
@@ -75,19 +84,21 @@ hero-overlay {
     align-items: center;
     justify-content: center;
 }
-.hero content {
+.hero-content {
     z-index: 1; /* Ensure content is above overlay */
 }
 .hero-content h2 {
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
+    color: #ffffff;
 }
-.hero-content h3 {
-    font-size: 1.5em;
+.hero-content p{
+    font-size: 1em;
     margin-bottom: 30px;
+    font-family: sans-serif;
 }
-btn {
-    background-color: #f39c12; /* Orange */
+.btn {
+    border: solid 2px #e67e22; /* Orange */
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -114,7 +125,7 @@ btn {
         background-color: #fff;
         padding: 30px;
         border-radius: 8px;
-        box-shadow: 0 4x 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
     }
     .info-item:hover {

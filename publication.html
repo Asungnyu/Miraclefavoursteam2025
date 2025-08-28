@@ -1,101 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publications</title>
-    <link rel="stylesheet" href="publication.css">
-</head>
-<body>
-    <header class="main-header">
-        <div class="logo">
-            <img src="Mlogo.jpg" alt="logo">
-            Teacher</div>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Team.html">Team</a>
-            <a href="Contact.html">Contact</a>
-            <a href="Un-Published works.html">Un-Published Works</a>
-        </nav>
+    <link rel="stylesheet" href="publication.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img id="logomo" src="./images/Mlogo.jpg" width="40px" alt="logo">
+                <h1>THE TEACHING SPOT</h1>
+            </div>
+            <nav id="atag">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="unpublished.html">Unpublished</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
     </header>
     <main class="main-content">
-        <div class="publications-column">
+      <div class="publications-column">
         <section class="featured-publications">
-            <h2>Publications</h2>
-            <div class="scroll-container">
-                <div class="publication-card">
-                    <img src="Alone.jpg" alt="Journal cover1">
-                    <p class="journal-title">Alone</p>
-                    <a href="#">[PubMed]</a>
-                </div>
-                <div class="publication-card">
-                    <img src="AKA.jpg" alt="journal cover2">
-                    <p class="journal-title">END OF WATCH</p>
-                    <a href="#">[PubMed]</a>
-                </div>
+          <h2>Publications</h2>
+          <div class="scroll-container">
             <div class="publication-card">
-                    <img src="soul.jpg" alt="Journal cover3">
-                    <p class="journal-title">Soul</p>
-                    <a href="#">[PubMed]</a>
-                </div>
-                </div>
+              <img src="./images/Alone.jpg" alt="Journal cover1" />
+              <p class="journal-title">Alone</p>
+              <a href="#">[PubMed]</a>
+            </div>
+            <div class="publication-card">
+              <img src="./images/AKA.jpg" alt="journal cover2" />
+              <p class="journal-title">END OF WATCH</p>
+              <a href="#">[PubMed]</a>
+            </div>
+            <div class="publication-card">
+              <img src="./images/Soul.jpg" alt="Journal cover3" />
+              <p class="journal-title">Soul</p>
+              <a href="#">[PubMed]</a>
+            </div>
+          </div>
         </section>
-            <section class="recent-publications">
-                <h2>Recent Publications</h2>
-                <div class="publication-list">
-                    <div class="publication-entry">
-                        <div class="pub-year">2021</div>
-                        <div class="pub-detials">
-                            <p class="pub-authors">Author A ,Author B,et al.</p>
-                            <p class="pub-title"></p>
-                        </div>
-                        <a href="#" class="view-pdf-btn">View PDF</a>
-                    </div>
-                    <div class="publication-entry">
-                        <div class="pub-year">2020</div>
-                        <div class="pub-detials">
-                            <p class="pub-authors">Author C ,Author D,et al.</p>
-                            <p class="pub-title"></p>
-                        </div>
-                        <a href="#" class="view-pdf-btn">View PDF</a>
-                    </div>
-                    <div class="publication-entry">
-                        <div class="pub-year">2018</div>
-                        <div class="pub-detials">
-                            <p class="pub-authors">Author E,et al.</p>
-                            <p class="pub-title">CRISPR-Cas9 System Advancements</p>
-                        </div>
-                        <a href="#" class="view-pdf-btn">View PDF</a>
-                    </div>
-                </div>
-            </section>
-</div>
-<aside class="sidebar">
-    <div class="search-box">
-        <h3>Search Publications</h3>
-        <input type="text" placeholder="Keywords,Books ...">
-        <button type="button">Search</button>
-    </div>
-    <div class="filter-box">
-        <h3>Filter by book genre</h3>
-        <ul>
+        <section class="recent-publications">
+          <h2>Recent Publications</h2>
+          <div class="publication-list">
+            <div class="publication-entry">
+              <div class="pub-year">2021</div>
+              <div class="pub-detials">
+                <p class="pub-authors">Author A ,Author B,et al.</p>
+                <p class="pub-title"></p>
+              </div>
+              <a href="#" class="view-pdf-btn">View PDF</a>
+            </div>
+            <div class="publication-entry">
+              <div class="pub-year">2020</div>
+              <div class="pub-detials">
+                <p class="pub-authors">Author C ,Author D,et al.</p>
+                <p class="pub-title"></p>
+              </div>
+              <a href="#" class="view-pdf-btn">View PDF</a>
+            </div>
+            <div class="publication-entry">
+              <div class="pub-year">2018</div>
+              <div class="pub-detials">
+                <p class="pub-authors">Author E,et al.</p>
+                <p class="pub-title">CRISPR-Cas9 System Advancements</p>
+              </div>
+              <a href="#" class="view-pdf-btn">View PDF</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside class="sidebar">
+        <div class="search-box">
+          <h3>Search Publications</h3>
+          <input type="text" placeholder="Keywords,Books ..." />
+          <button type="button">Search</button>
+        </div>
+        <div class="filter-box">
+          <h3>Filter by book genre</h3>
+          <ul>
             <li><a href="#">Drama</a></li>
-            <li><a href="#.html">Prose</a></li>
+            <li><a href="#">Prose</a></li>
             <li><a href="#">poetry</a></li>
-        </ul>
-    </div>
-    <div class="cv-download">
-        <a href="#" class="download-btn">Download CV</a>
-    </div>
-</aside>
+          </ul>
+        </div>
+        <div class="cv-download">
+          <a href="#" class="download-btn">Download CV</a>
+        </div>
+      </aside>
     </main>
     <footer class="main-footer">
-        <p>&copy; 2025 Biochemist</p>
-        <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">ORCID</a>
-        </div>
+      <p>&copy; 2025 Biochemist</p>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">ORCID</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

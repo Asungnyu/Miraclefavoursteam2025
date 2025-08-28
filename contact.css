@@ -1,6 +1,6 @@
 /* Contact Page Specific Styles */
 .contact-hero {
-    background-image: url(AKA.jpg); /* Replace with a suitable with a suitable contact page banner image */
+    background-image: url(./images/AKA.jpg); /* Replace with a suitable with a suitable contact page banner image */
     background-size: cover;
     background-position: center;
     color: #fff;
